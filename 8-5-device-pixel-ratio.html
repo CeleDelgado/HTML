@@ -1,0 +1,36 @@
+<!--8.5 y 8.6-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Device Pixel Ratio y atributo srcset</title>
+    <style>
+        img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<!--
+    DPR (Device Pixel Ratio)
+        Es la relación que existe enre los píxeles reales que tiene el dispositivo y los píxeles que tenemos disponibles para "pintar" contenido 
+    
+    DPR= pixeles reales/ pixeles disponibles
+-->
+<body>
+    <h1>Contenido Embebido</h1>
+    
+    <img src="/curso-html/web-demo/assets/images/portada.jpg" width="300" alt="Portada">
+    <!--Para usar el artibuto width de esteb modo lo tenemos que hacer cuando es una imagen dinámica y la cargamos desde javascrit-->
+
+    <!--Cargamos las imagenes en srcset con la condicion para ver que imagen colocar segun el dpr y una copia de seguridad en src para los casos que usen el navegador internet explorer que no soporta el atribuo srcset y las imagenes formato webp-->
+    <img srcset="
+    /curso-html/web-demo/assets/images/portada.jpg,
+
+    /curso-html/web-demo/assets/images/bart.png 3x" src="
+    
+    /curso-html/web-demo/assets/images/bart.png" 
+    
+    alt="Imagen, relación dpr con srcset">
+
+</body>
+</html>

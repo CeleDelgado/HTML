@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Envio get vs post</title>
+</head>
+<!--MUY IMPORTANTE COLOCAR NAME A LOS FORMULARIOS, SINO SERIA COMO QUE NO DEJAMOS PLASMADO NADA Y NO QUEDARIA BIEN GUARDADO EL FORMULARIO-->
+<body>
+    <form action="enviar.html" method="get">
+        <!--get se ejecuta cuando entramos a una pagina a raves de url
+        post envia formularios de la parte de atras del formulario-->
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name">
+        <label for="surname">Apellido</label>
+        <input type="text" id="surname" name="surname">
+        <input type="submit">
+    </form>    
+</body>
+</html>

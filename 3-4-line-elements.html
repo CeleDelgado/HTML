@@ -1,0 +1,70 @@
+<!-- Elementos de linea -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de línea</title>
+</head>
+<body>
+    <h1>Elementos de línea</h1>
+    <!-- 
+        em->            ENFASIS
+        strong->        MAS ENFASIS
+        small->         MENOS ENFASIS QUE EL TEXTO NORMAL
+        br->            SALTO DE LINEA
+        wbr->           SALTO DE LINEA, SI HICIERA FALTA
+        time->          REPRESENTA CONTENIDO DE HORA/FECHA
+        i->             ITALIC
+        b->             BOLD
+        u->             UNDERLINE
+        sup->           SUPERINDICE
+        sub->           SUBINDICE
+     -->
+
+    <p> <em> El dinero</em> es importante, pero <strong> la salud </strong> es lo es mas aun</p> 
+    <!-- colocando "em" aqui no es para poner el tema principal en cursiva (para estilos de hoja usamos CSS), lo que hacemos aqui con EM es DECIRLE AL NAVEGADOR  que ESAS PALABRAS TIENEN MAS IMPORTANCIA QUE EL RESTO DEL TEXTO 
+    con STRONG, le decimos al navegador que tiene mayor importancia en el texto, si hacemos niveles de importancia (donde 0 es nada y a mayor nivel mayor importancia) seria: 
+    nivel 0: "es importante", "es lo mas importante"
+    nivel 1: "el dinero"
+    nivel 2: "la salud"-->
+    <p><small>Saludos</small></p>
+    <!-- La etiqueta "small" tiene mucho menos importancia que todo el demas parrafo, es decir su nivel seria: -1, si nos basamos en la "tabla de importancia" -->
+    <p>Lorem ipsum dolor sit<br> 
+    <!-- se produce un salto de linea con "BR", pero tiene un problema: 
+    puede ser <br> o <br/> ambos son validos, pero en html se utiliza <br>
+
+    "BR" se utiliza para:
+    una direccion
+    un poema 
+    o algun tipo de texto que el salto de linea sea relevante
+    -->
+    amet consectetur adipisicing elit. Id deserunt tempora quos, ullam ea, veniam assumenda quam consequuntur nesciunt beatae ab commodi? Praesentium doloremque voluptatem delectus numquam voluptates iusto illo?</p>
+
+    <!-- Si tenemos una palabra larga/ LINK y necesitamos cortarla en caso de que no quepa, usamos "WBR" -->
+    <p> http://127.0.0.1:5500/ <wbr> cursos/<wbr>html/<wbr>elementos/<wbr>3-4-line-elements.html</p>
+    <!-- Si usamos "-" el navegador entiende que puede separar las palabras, pero si usamos "_" el navegador lo toma como una sola palabra y no las separa -->
+    <p> http://127.0.0.1:5500/ <wbr> cursos/<wbr>html/<wbr>elementos/<wbr>3_4_line_elements.html</p>
+
+    <time>
+        <!-- usamos "time" cuando por ejemplo tenemos un post o un blog y se debe publicar en cierto dia y en cierta hora -->
+        29/01/2022 02:00
+        <!-- al ejecutarse se mostrara como un texto normal, pero el navegador esta entendiendo que REPRESENTA UNA FECHA Y LE DARA LA IMPORTANCIA QUE AMERITE, es valido si tiene fecha o hora o viceverza -->
+    </time>
+
+    <!-- AHORA TENEMOS TRES ETIQUETAS QUE SIRVEN PARA DAR ESTILO EN HTML, solo ellas, PORQUE DEMAS ESTILOS SE DAN CON CSS -->
+    <P>
+        <i>ITALIC</i>
+        <b>BOLD</b>
+        <u>UNDERLINE
+
+        </u>
+    </P>
+
+    <!-- SUPERINDICE -->
+    <p>4 elevado al cuadrado se representa así 4 <sup>2</sup></p>
+
+    <!-- SUBINDICE -->
+    <p>Agua oxigenada tiene la formula H<sub>2</sub>O<sub>2</sub></p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!--Tipos de inputs-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inputs para fechas</title>
+</head>
+<!--
+    inpus type:
+        
+        button  ->  Visualmene es igual pero el formulario no se enviará
+        submit  ->  Se utiliza para enviar el formulario
+        datetime->  Obsoleto
+        datetime-local -> fecha y hora, no funciona en firefox
+        time    ->  se utiliza para introducir una hora
+            TIP
+                *SE RECOMIENDA: usar datetime-local y time para seleccionar fecha y hora
+                hidden -> campo oculto, puede contener valor pero no se mostrará 
+
+        month   -> Se utliza para introducir un mes 
+        week    -> Se utiliza para introducir el numero de semana del año
+        ...
+-->
+<body>
+    <form>
+        <input type="date">
+        <input type="datetime">
+        <!--Se recomienda usar datetime-local por el funcionamiento en todos los navegadores-->
+        <input type="datetime-local">
+        <!--Si queremos introducir fecha y hora separados podemos: -->
+        <input type="date">
+        <input type="time">
+        <input type="month">
+        <input type="week">
+    </form>
+
+    
+</body>
+</html>

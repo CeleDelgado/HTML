@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Input radio</title>
+</head>
+<!--
+    color   ->  Se utiliza para especificar un color
+    number  ->  Se utiliza para valores numéricos
+    range   ->  Se utiliza para establecer un rango
+    reset   ->  Se utiliza para resetear el formulario
+    text    ->  valor por defecto
+
+    -->
+<body>
+    <form>
+        <!--Es para las paginas donde el usuario tiene ineraccion para elegir colores-->
+        <input type="color">
+        <!--para valores numericos, texto no nos permite, numeros sì-->
+        <input type="numer">
+        <!--con step damos el rango en que se divide el maximo-->
+        <input type="range" step="10" min="0" max="20">
+        <!--nos da un boton para borrar los datos introducidos en el formulario-->
+        <input type="reset">
+        <!--Es importante saber el input text porque si tenemos un input del tipo hidden...-->
+        <input type="text">
+        <!--... con hidden pasa que en funcion de lo que haya seleccionado el usuario se muestre o no,desde java podemos hacer que: 
+        si selcciona A , que cambie de hidden a text-->
+        <input type="hidden">
+    </form>
+</body>
+</html>

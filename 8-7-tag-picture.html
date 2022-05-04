@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Etiqueta Picture</title>
+   <style>
+        img{
+            max-width: 100%;
+        }
+    </style>
+-->
+</head>
+<body>
+    <h1>Contenido Embebido</h1>
+    <picture>
+        <!--Funciona igual que srcset pero nos da mas opciones-->
+        
+        <!-- 
+        <source srcset="
+        /curso-html/web-demo/assets/images/portada.webp,    
+        /curso-html/web-demo/assets/images/portada.jpg">
+
+    -->
+    <!--este tipo de picture con atributo source tiene la condicion: a partir de un maximo de 1200px cargue la imagen sino que cargue una imagen para movil. PICTURE ES MEJOR YA QUE NOS DA MAS OPCIONES PARA PARA LAS IMAGENES QUE CARGUEMOS COMO CONTENIDO EMBEBIDO, TAMBIEN PODEMOS USAR X2 O X3 YA QUE LAS OPCIONES DE DPR ESTAN DENTRO DE SOURCE SRCSET-->
+        <source srcset="/curso-html/web-demo/assets/images/portada.webp" media="(max-width: 1200px)">
+         <img src="/curso-html/web-demo/assets/images/portada.jpg"         
+         alt="Imagen, relación dpr con srcset">
+
+    </picture>
+</body>
+</html>

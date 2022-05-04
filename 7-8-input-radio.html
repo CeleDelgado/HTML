@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Input radio</title>
+</head>
+<!--
+    radio   ->  permite seleccionar una unica opcion de una lista ded opciones relacionadas
+    checkbox->  permite seleccionar varias opciones de una lista ded opciones relacionadas
+    select  ->  crea una lista de opciones donde podemos seleccionar una o varias opciones
+
+    cada opcion ira dentro de una etiqueta <option> </option>
+
+    si tenemos muchas opciones podemos ordenarlas por categorias a traves de la etiqueta <optgroup> con el atributo label para nombrar la caegoria
+-->
+<body>
+
+    <h1>Elementos seleccionables</h1>
+    <form>
+        <h2>Género</h2>
+        <!--si o si este input dedbe tener un name, para indicarle al navegador que todas las opciones pertenecen a la misma categoria y por lo tanto podemos seleccionar una de las 3 opciones, caso contrario nos permite seleccionar todo, para permitir solo una seleccion agregamos un name, si queremos marcado por defefcto usamos checked-->
+        <label>Masculino
+            <!--Para decirle al navegador que valor ha escogido el usuario usamos value-->
+            <input type="radio" name="gender" value="masculino" checked>
+        </label>
+
+        <label>Femenino
+            <input type="radio" name="gender" value="femenino">
+        </label>
+
+        <label>Desconocido
+            <input type="radio" name="gender" value="desconocido">
+        </label>
+    </form>
+    
+</body>
+</html>

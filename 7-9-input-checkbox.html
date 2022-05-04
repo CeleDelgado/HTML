@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Input checkbox</title>
+</head>
+<!--
+    radio   ->  permite seleccionar una unica opcion de una lista ded opciones relacionadas
+    checkbox->  permite seleccionar varias opciones de una lista ded opciones relacionadas
+    select  ->  crea una lista de opciones donde podemos seleccionar una o varias opciones
+
+    cada opcion ira dentro de una etiqueta <option> </option>
+
+    si tenemos muchas opciones podemos ordenarlas por categorias a traves de la etiqueta <optgroup> con el atributo label para nombrar la caegoria
+-->
+<body>
+
+    <h1>Elementos seleccionables</h1>
+    <form>
+        <h2>Lenguajes que conoces</h2>
+        <label>
+            HTML
+            <input type="checkbox" name="languages" value="html" checked>
+        </label>
+
+        <label>
+            CSS
+            <input type="checkbox" name="languages" value="css" >
+        </label>
+
+        <label>
+            JavaScript
+            <input type="checkbox" name="languages" value="JavaScript" checked>
+        </label>
+        <!--En el input checkbox podemos poner la opcion por defecto de checked cosa que en radio solo se puede en una de ellas-->
+    </form>
+    
+</body>
+</html>

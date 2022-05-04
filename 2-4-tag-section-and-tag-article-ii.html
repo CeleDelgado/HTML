@@ -1,0 +1,51 @@
+<!-- Ejemplo de sections que posee distintos articles -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta "Setion" y etiqueta "Article" II</title>
+</head>
+<body>
+    <!-- cabecera del cuerpo de la pagina web -->
+    <header>
+        <h1>NOTICIAS NACIONALES</h1> 
+    </header>  
+
+
+    <!-- Contenido principal -->
+    <main>
+        <section>
+            <h2>SECTION COMO CONTENEDOR</h2>
+            <!-- SECTION AGRUPA CONTENIDO RELACIONADO -->
+            <section>
+                <h3>Noticias del Día</h3>
+                <article>
+                    <!-- CADA ARTICULO PUEDE TENER UN HEADER Y UN FOOTER, YA QUE SERIAN, EL ENCABEZADO Y PIE DE PAGINA DE ESE ARTICULO EN SI, ES DECIR DE LA NOTICIA 1 -->
+                    <header>
+                        <h4>Noticia 1</h4>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda vero molestias temporibus excepturi architecto est ad consequatur reiciendis quisquam eveniet sequi iusto, rerum aperiam qui, fuga velit adipisci saepe!</p>
+                    <footer>La noticia ocurrió en Madrid.</footer>
+                </article>
+                
+                <article>
+                    <!-- PODEDMOS AGREGARLE EL HEADER Y EL FOOTER, YA QUE ES SEMANTICAMENTE CORRECTO, NO SON OBLIGATORIOS PERO COMO LOS ARTICLE SON CONTENIDO INDEPENDIENTE SE LE PERMITE TENER -->
+                    <h4>Noticia 2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti facilis aspernatur nisi iusto ullam hic ipsa adipisci ab excepturi sapiente quaerat saepe voluptas dicta sed doloribus fugit earum, impedit id.</p>
+                </article>
+                <article>
+                    <h4>Noticia 3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur velit rem ex dignissimos, atque at delectus tenetur sint tempore consequuntur neque nisi soluta quo, quae illo distinctio saepe temporibus nobis!</p>
+                </article>
+            </section>
+            <!-- El primer section refiere a: SECTION COMO AGRUPACION DE CONTENIDO, mientras que el segundo section refiere a: NOTICIAS DEL DIA, pueden estar anidadas ya que se relacionan entre sí -->
+        </section> 
+    </main>
+
+
+
+    <!-- Pie de pagina del cuerpo -->
+    <footer>21-01-2022</footer>
+</body>
+</html>

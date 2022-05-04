@@ -1,0 +1,63 @@
+<!--Otra etiquetas de bloque-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Otra etiquetas de bloque</title>
+</head>
+
+<body>
+    <!--
+        address ->  Se utiliza para aportar información de contacto para el article más cercano o para todo el body
+
+        blockquote -> Se utiliza para marcar las citas a otros autores o documentos.
+        Se puede incluir el atributo cite para poner un enlace al documento original o fuente
+
+        pre -> Se utiliza para tener el código proformateado que necesita ser representado igual que se escribió
+
+        div -> Se usa como división del documento, semánticamente no significa nada, es un contenedor genético que se usa generalmente para dar estilo a través de CSS o para algo denominado "delegación de eventos" en JavaScript
+
+        hr -> Horizontal rule, se utiliza para decirle al navegador que vamos a cambiar de tema
+    -->
+
+    <address>
+        Tony Stark <br>
+        Malibú 10880 <br>
+        90265 <br> 
+        Califonia 
+        <!--En este caso la etiqueta br es correcta que por una cuestión de semántica, deben haber saltos de línea, además que esta dentro de la etiqueta address para mostrar una dirección-->
+    </address>
+
+    <blockquote cite="https://www.estrategiaynegocios.net/ocio/22-frases-para-emprendedores-cortesia-de-los-avengers-KVEN1172910#:~:text=%22Hay%20cosas%20que%20nunca%20le,si%20ten%C3%ADa%20dudas%20(%E2%80%A6).">
+        <p>
+            "Hay cosas que nunca le pregunté a mi padre. Hay preguntas que me hubiera gustado hacerle: cómo se sentía por lo que hacía su empresa, si estaba conflictuado, si tenía dudas (…). Vi a jóvenes estadounidenses ser asesinados por las armas que creaba para defenderlos y protegerlos. Me di cuenta que era parte de un sistema que no rinde cuentas
+        </p>
+        <!-- el link es solo información para el navegador, el usuario no puede verla en la web
+        -->
+    </blockquote>
+
+    <pre>
+        <!--Lo representa exactamente igual, ejemplo canciones, poemas, códigos, es para preformatear el código-->
+        Hola, 
+        ¿qué tal?
+                        Hola..
+    </pre>
+
+    <div>
+        <h2>Nombre1</h2>
+        <p>Email</p>
+        <p>Descripción</p>
+        <!--Con div damos estilo a cada uno de estos elementos, o generar clases, lo importante es que EL CONTENIDO QUE ESTA DENTRO DE UN DIV ESTE RELACIONADO -->
+    </div>
+
+    <div>
+        <h2>Nombre2</h2>
+        <p>Email</p>
+        <p>Descripción</p>
+    </div>
+
+    <!--HR no sirve para dibujar lineas, sino que le avisa al navegador que vamos a cambiar de tema, represena una rotura de tematica a nivel de parrafo-->
+    <hr>
+    
+</body>
+</html>
